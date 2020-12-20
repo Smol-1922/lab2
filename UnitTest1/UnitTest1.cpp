@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 #include "CppUnitTest.h"
 #include "C:\Users\Dkvit\source\repos\АлгСтр_данных_лб2\АлгСтр_данных_лб2\LinkedList.cpp"
-#include "C:\Users\Dkvit\source\repos\АлгСтр_данных_лб2\АлгСтр_данных_лб2\Header.h"
+#include "C:\Users\Dkvit\source\repos\АлгСтр_данных_лб2\АлгСтр_данных_лб2\functions.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
