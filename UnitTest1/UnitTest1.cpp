@@ -1,7 +1,7 @@
 ﻿#include "pch.h"
 #include "CppUnitTest.h"
 #include "C:\Users\Dkvit\source\repos\АлгСтр_данных_лб2\АлгСтр_данных_лб2\LinkedList.cpp"
-#include "C:\Users\Dkvit\source\repos\АлгСтр_данных_лб2\АлгСтр_данных_лб2\Header.h"
+#include "C:\Users\Dkvit\source\repos\АлгСтр_данных_лб2\АлгСтр_данных_лб2\functions.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -81,7 +81,7 @@ namespace UnitTest1
 		}
 		TEST_METHOD(countinTest_1)
 		{
-			int array[8] = { 10,12,7,5,2,3,9,4 };
+			char array[8] = { 10,12,7,5,2,3,9,4 };
 			countingSort(array, 8);
 			Assert::IsTrue(array[0] == 2);
 			Assert::IsTrue(array[1] == 3);
@@ -94,8 +94,8 @@ namespace UnitTest1
 		}
 		TEST_METHOD(countinTest_2)
 		{
-			int array[8] = { 10,12,7,10,2,3,10,3 };
-			countingSort(array, 5);
+			char array[8] = { 10,12,7,10,2,3,10,3 };
+			countingSort(array, 8);
 			Assert::IsTrue(array[0] == 2);
 			Assert::IsTrue(array[1] == 3);
 			Assert::IsTrue(array[2] == 3);
@@ -123,7 +123,7 @@ namespace UnitTest1
 		TEST_METHOD(bogoTest_2)
 		{
 			int array[8] = { 10,12,7,10,2,3,10,3 };
-			bogosort(array, 5);
+			bogosort(array, 8);
 			Assert::IsTrue(array[0] == 2);
 			Assert::IsTrue(array[1] == 3);
 			Assert::IsTrue(array[2] == 3);
@@ -135,21 +135,21 @@ namespace UnitTest1
 		}
 		TEST_METHOD(countingTest_1)
 		{
-			int array[8] = { 4,8,2,1,7,12,4,5 };
+			char array[8] = { 4,8,2,1,7,12,4,5 };
 			countingSort(array, 8);
-			Assert::IsTrue(array[0] == 2);
-			Assert::IsTrue(array[1] == 3);
+			Assert::IsTrue(array[0] == 1);
+			Assert::IsTrue(array[1] == 2);
 			Assert::IsTrue(array[2] == 4);
-			Assert::IsTrue(array[3] == 5);
-			Assert::IsTrue(array[4] == 9);
-			Assert::IsTrue(array[5] == 2);
-			Assert::IsTrue(array[6] == 3);
-			Assert::IsTrue(array[7] == 4);
+			Assert::IsTrue(array[3] == 4);
+			Assert::IsTrue(array[4] == 5);
+			Assert::IsTrue(array[5] == 7);
+			Assert::IsTrue(array[6] == 8);
+			Assert::IsTrue(array[7] == 12);
 		}
 
 		TEST_METHOD(countingTest_2)
 		{
-			int array[8] = { 2,8,8,6,2,6,8,12 };
+			char array[8] = { 2,8,8,6,2,6,8,12 };
 			countingSort(array, 8);
 			Assert::IsTrue(array[0] == 2);
 			Assert::IsTrue(array[1] == 2);

@@ -47,7 +47,7 @@ void insertSort(int* arr, int n) {
         arr[j + 1] = iter;
     }
 }
-void countingSort(int* array, int n) {
+void countingSort(char* array, int n) {
     int arraycounting[256];
     for (int i = 0; i < 256; i++) {
         arraycounting[i] = 0;
